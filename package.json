@@ -5,7 +5,9 @@
   "license": "MIT",
   "packageManager": "yarn@3.4.1",
   "scripts": {
-    "dev": "yarn workspace sveltekit dev"
+    "dev": "yarn workspace sveltekit dev",
+    "lint": "yarn workspace sveltekit prettier --plugin-search-dir . --check . && eslint .",
+    "format": "yarn workspace sveltekit prettier --plugin-search-dir . --write ."
   },
   "workspaces": [
     "packages/*"
