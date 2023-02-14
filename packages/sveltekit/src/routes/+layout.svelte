@@ -3,6 +3,5 @@
 	import { Header } from 'my-component-library';
 </script>
 
-
 <Header />
 <slot />

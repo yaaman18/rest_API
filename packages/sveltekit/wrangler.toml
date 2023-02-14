@@ -8,6 +8,6 @@ main = "./.cloudflare/worker.js"
 bucket = "./.cloudflare/public"
 
 [build]
-command = "npm run build"
+command = "yarn build"
 [vars]
 account_id = ""

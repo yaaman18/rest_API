@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { connected, signer, signerAddress, defaultEvmStores } from 'svelte-ethers-store';
-    import { Hono } from "hono";
-
+	import { Hono } from 'hono';
 
 	const connect = async () => {
 		// ここでメタマスクと繋がる
@@ -13,7 +12,7 @@
 	};
 
 	const app = new Hono();
-    app.get("/", (c) => c.text("Hello 🔥"));
+	app.get('/', (c) => c.text('Hello 🔥'));
 </script>
 
 <svelte:head>

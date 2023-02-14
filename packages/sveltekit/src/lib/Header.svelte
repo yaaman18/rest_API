@@ -41,19 +41,27 @@
 							/>
 						</svg>
 					</button>
+
+					<div
+						class="  flex-col  justify-center mt-10 ml-10  space-y-4  flex   md:space-x-10
+                        {showMenu ? 'flex' : 'hidden'}"
+					>
+						<a class="z-20  text-gray-800 hover:text-blue-400" href="/">Home</a>
+						<a class="z-20 text-gray-800 hover:text-blue-400" href="/blog">Blog</a>
+						<a class="z-20 text-gray-800 hover:text-blue-400" href="/contact">Contact US</a>
+						<a class="z-20 text-gray-800 hover:text-blue-400" href="/about">About Us</a>
+					</div>
 				</div>
 			</div>
-
+       <div
+						class="invisible md:visible"
+					>
+						<a class="mx-4  text-gray-800 hover:text-blue-400" href="/">Home</a>
+						<a class="mx-4 text-gray-800 hover:text-blue-400" href="/blog">Blog</a>
+						<a class="mx-4 text-gray-800 hover:text-blue-400" href="/contact">Contact US</a>
+						<a class="mx-4 text-gray-800 hover:text-blue-400" href="/about">About Us</a>
+					</div>
 			<!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-			<div
-				class="absolute right-1 my-2 mr-8 flex  flex-col  justify-center  space-y-4 md:mt-0 md:flex md:flex-row md:items-center  md:space-y-0 md:space-x-10
-                     {showMenu ? 'flex' : 'hidden'}"
-			>
-				<a class=" z-20  text-gray-800 hover:text-blue-400" href="/">Home</a>
-				<a class="z-20 text-gray-800 hover:text-blue-400" href="/blog">Blog</a>
-				<a class="z-20 text-gray-800 hover:text-blue-400" href="/contact">Contact US</a>
-				<a class="z-20 text-gray-800 hover:text-blue-400" href="/about">About Us</a>
-			</div>
 		</nav>
 	</div>
 </div>
