@@ -1,0 +1,13 @@
+{
+  "name": "foundry_sveltekit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "yarn@3.4.1",
+  "scripts": {
+    "dev": "yarn workspace sveltekit dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
