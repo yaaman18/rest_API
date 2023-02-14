@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { connected, signer, signerAddress, defaultEvmStores } from 'svelte-ethers-store';
+    import { Hono } from "hono";
+
 
 	const connect = async () => {
 		// ここでメタマスクと繋がる
@@ -9,6 +11,9 @@
 		const b = await $signer.getBalance();
 		console.log(b);
 	};
+
+	const app = new Hono();
+    app.get("/", (c) => c.text("Hello 🔥"));
 </script>
 
 <svelte:head>
@@ -27,5 +32,8 @@
 		</ul>
 
 		<button class="btn" on:click={connect}>connect</button>
+	</div>
+	<div>
+		<p>{app}</p>
 	</div>
 </div>
